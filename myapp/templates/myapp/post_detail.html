@@ -28,7 +28,7 @@
                     <a href="{% url 'myapp:post_delete' object.pk %}" class="btn btn-danger">削除</a>
                     {% endif %}
 
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">&nbsp;{{ item.created_at.date }}</small>
                 </p>
             </div>
 
