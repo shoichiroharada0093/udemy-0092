@@ -41,9 +41,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'myapp:index' %}">Home</a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a class="nav-link" href="/admin" target='_blank'>管理画面へ</a>
-                    </li>
+                    </li> {% endcomment %}
 
                     <!-- Navbar dropdown -->
                     <li class="nav-item dropdown">
@@ -195,6 +195,10 @@
     
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             @ 2021 Built With Django
+            <br>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin" target='_blank' style="color: oldlace;">管理画面へ</a>
+            </li>
         </div>
         <!-- Copyright -->
     </footer>
