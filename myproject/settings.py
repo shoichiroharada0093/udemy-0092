@@ -139,6 +139,12 @@ LOGIN_URL = 'myapp:login'
 LOGIN_REDIRECT_URL = 'myapp:index'
 
 # S3のための記述
+AWS_STORAGE_BUCKET_NAME = 'udemy-0092'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CatheControl': 'max-age=86400',  #1日はそのキャッシュを使う
+}
+
 AWS_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3BoTo3Storage'
 
