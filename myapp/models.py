@@ -26,7 +26,7 @@ class Post(models.Model):
     content = models.TextField('内容', max_length=1000)
     category = models.ForeignKey('Category', on_delete=models.PROTECT)
 
-    thumbnail = models.ImageField(upload_to='images/', blank=True)
+    thumbnail = models.ImageField(upload_to='images', blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
