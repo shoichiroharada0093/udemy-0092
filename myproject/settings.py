@@ -142,7 +142,7 @@ LOGIN_REDIRECT_URL = 'myapp:index'
 AWS_STORAGE_BUCKET_NAME = 'udemy-0092'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = {
-    'CatheControl': 'max-age=86400',  #1日はそのキャッシュを使う
+    'CacheControl': 'max-age=86400',  #1日はそのキャッシュを使う
 }
 
 AWS_LOCATION = 'media'
